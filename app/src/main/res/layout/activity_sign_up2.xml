@@ -1,0 +1,129 @@
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/container"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context="shivanktibrewalms.doms5.SignUpActivity" tools:ignore="MergeRootFrame" />-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context="shivanktibrewalms.doms5.SignUpActivity$PlaceholderFragment">
+
+<!--<TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />-->
+
+<TextView android:id="@+id/lblUsername"
+    android:text="Username"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    />
+
+<EditText
+    android:id="@+id/txtusername"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:hint="username"
+    android:layout_below="@+id/lblUsername"
+    android:inputType="text" />
+
+<TextView android:id="@+id/lblPassword"
+    android:text="Password"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:layout_below="@+id/txtusername"
+    />
+
+<EditText
+    android:id="@+id/txtpassword"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/lblPassword"
+    android:hint="password"
+    android:inputType="textPassword" />
+
+<TextView android:id="@+id/lblName"
+    android:text="Name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:layout_below="@+id/txtpassword"
+    />
+
+<EditText
+    android:id="@+id/txtName"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/lblName"
+    android:hint="Enter Name"
+    android:inputType="text" />
+
+<TextView android:id="@+id/lblAddress"
+    android:text="Address"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:layout_below="@+id/txtName"
+    />
+
+<EditText
+    android:id="@+id/txtAddressLn1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/lblAddress"
+    android:hint="Enter Address"
+    android:inputType="text" />
+
+
+<TextView android:id="@+id/lblEmail"
+    android:text="Email"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:layout_below="@+id/txtAddressLn1"
+    />
+
+<EditText
+    android:id="@+id/txtEmail"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/lblEmail"
+    android:hint="Enter email"
+    android:inputType="textEmailAddress" />
+
+
+<TextView android:id="@+id/lblPhone"
+    android:text="Phone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:layout_below="@+id/txtEmail"
+    />
+
+<EditText
+    android:id="@+id/txtPhone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/lblPhone"
+    android:hint="Enter Phone"
+    android:inputType="phone" />
+
+
+<Button
+    android:id="@+id/btnSign"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/txtPhone"
+    android:layout_marginTop="10dp"
+    android:visibility="visible"
+    android:padding="10dp"
+    android:textColor="#ff000000"
+    android:background="@layout/mybutton"
+    android:onClick="signUp"
+    android:text="Sign Up" />
+
+
+</RelativeLayout>
